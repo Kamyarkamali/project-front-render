@@ -8,6 +8,7 @@ import MainContent5 from "./MainContent5";
 import MainContent6 from "./MainContent6";
 import MainContent7 from "./MainContent7";
 import MainContent8 from "./MainContent8";
+import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -33,10 +34,12 @@ function HeroSection() {
             <button className="lg:w-[259px] w-[80%] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
               What is Matched Betting?
             </button>
-            <button className="lg:w-[168px] w-[80%] flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-color duration-300 hover:gap-4 cursor-pointer p-3">
-              Get Started
-              <FaArrowRight />
-            </button>
+            <Link href={"/academy"}>
+              <button className="lg:w-[168px] w-[80%] flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-color duration-300 hover:gap-4 cursor-pointer p-3">
+                Get Started
+                <FaArrowRight />
+              </button>
+            </Link>
           </div>
         </div>
         {/* تصویر */}

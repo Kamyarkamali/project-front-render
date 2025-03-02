@@ -5,11 +5,13 @@ function FrogetPassword() {
   return (
     <div className="flex justify-center items-center min-h-screen px-4">
       <div className="flex flex-col items-center gap-4 w-full max-w-md">
-        <img
-          className="w-[200px] md:w-[260px]"
-          src="/images/imageHome/mbb-logo.svg"
-          alt="Logo"
-        />
+        <Link href={"/"}>
+          <img
+            className="w-[200px] md:w-[260px]"
+            src="/images/imageHome/mbb-logo.svg"
+            alt="Logo"
+          />
+        </Link>
 
         <div className="bg-[#BEE5EB] p-4 rounded-lg w-full">
           <p className="text-[#6E6D60] text-sm md:text-base text-center">
