@@ -2,94 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
-
-const steps = [
-  {
-    id: 1,
-    title: "The Fundamentals",
-    title2: "Learn the fundamentals",
-    description:
-      "Matched betting is a simple betting technique that takes advantage of bookmaker promotions to make a profit no matter the outcome of the event you're betting on.Walk through your first offer and make £37 in the process.",
-    amount: "£37.00",
-    guaranteed: true,
-    image: "/images/imageMainContent/card1.png",
-  },
-  {
-    id: 2,
-    title: "Coral – £20 in Free Bets",
-    title2: "Put it into practice…",
-    amount: "£15.75",
-    guaranteed: true,
-  },
-  {
-    id: 3,
-    title: "Sky Bet – £30 in Free Bets",
-    amount: "£23.75",
-    guaranteed: true,
-  },
-  {
-    id: 4,
-    title: "Matt’s Top Tips for Matched Betting Newbies",
-    description:
-      "A few tips to maximize profits, keep you on track, and make profits over the long term.",
-    image: "/images/imageMainContent/dddd.png",
-    guaranteed: true,
-  },
-  {
-    id: 5,
-    title: "Virgin Bet – £20 in Free Bets",
-    amount: "£15.50",
-    guaranteed: true,
-  },
-  {
-    id: 6,
-    title: "William Hill – £30 in Free Bets",
-    amount: "£23.50",
-    guaranteed: true,
-  },
-
-  {
-    id: 7,
-    title: "Save Time with on Odds Matcher",
-    description:
-      "An pdds matcher can save you time when event and  market to place your back and  lay bets on.Save time equals more offers  you can complerte, wich means a greater hourly profit.",
-    image: "/images/imageMainContent/card3.png",
-    guaranteed: true,
-  },
-  {
-    id: 8,
-    title: "Ladbrokes – £20 in Free Bets",
-    amount: "£37.00",
-    guaranteed: true,
-  },
-  {
-    id: 9,
-    title: "Bet UK – £30 in Free Bets",
-    amount: "£21.50",
-    guaranteed: true,
-  },
-  {
-    id: 10,
-    title: "BoyleSports – £20 in Free Bets",
-    amount: "£15.00",
-    guaranteed: true,
-  },
-  {
-    id: 11,
-    title: "Paddy Power – £30 in Free Bets",
-    amount: "£23.75",
-    guaranteed: true,
-  },
-
-  {
-    id: 12,
-    title: "Renew your Smarkets 0% Commission",
-    description:
-      "Eventualyy, your 0% commission at Smarkets that was part of your welcome offer will expire. But fear not, you can extend your 0% commission beyound  this point.Let's find out how.",
-    image: "/images/imageMainContent/card4.png",
-    guaranteed: true,
-  },
-];
+import { steps } from "@/data/localData";
 
 export default function AcademyPage() {
   return (
@@ -116,20 +29,20 @@ export default function AcademyPage() {
             className="flex flex-col sm:flex-row items-start w-full mb-6"
           >
             {/* Step Circle */}
-            <div className="relative flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#C3F6F0] text-black font-bold rounded-full border-2 border-[#C3F6F0] text-lg sm:left-[-10px]">
+            <div className="relative flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center bg-[#C3F6F0] text-[15px] text-[#20635D] rounded-full border-2 border-[#C3F6F0] text-lg sm:left-[-10px]">
               {step.id}
             </div>
 
             {/* Step Content */}
             <div className="sm:ml-8 p-4 w-full transition-all duration-300 cursor-pointer flex items-center gap-4 bg-white text-black rounded-lg hover:shadow-md hover:scale-100 shadow-sm flex-grow flex-col sm:flex-row">
               {step.image && (
-                <div className="mb-4 sm:mb-0">
+                <div className="relative w-full sm:w-[300px] h-[200px] rounded-lg sm:h-[200px] flex-shrink-0 overflow-hidden">
                   <Image
                     src={step.image}
                     alt={step.title}
-                    width={800}
+                    width={900}
                     height={800}
-                    className="rounded-lg w-full sm:w-[400px]"
+                    className="absolute top-0 left-0 w-full h-full object-cover"
                   />
                 </div>
               )}

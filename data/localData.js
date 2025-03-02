@@ -277,3 +277,48 @@ export const localDataMainContent = [
     desc: "Find further support and a community of like-minded matched bettors. We’re all here to help and make profits!",
   },
 ];
+
+export const steps = [
+  {
+    id: 1,
+    title: "The Fundamentals",
+    amount: "£37.00",
+    description:
+      "Matched betting is a simple betting technique that takes advantage of bookmaker promotions to make a profit no matter the outcome of the event you’re betting on.",
+    readTime: "15 mins",
+    image: "/images/imageMainContent/card1.svg",
+  },
+  { id: 2, title: "Coral – £20 in Free Bets", amount: "£15.75" },
+  { id: 3, title: "Sky Bet – £30 in Free Bets", amount: "£23.75" },
+  {
+    id: 4,
+    title: "Matt’s Top Tips for Matched Betting Newbies",
+    image: "/images/imageMainContent/cardd.svg",
+
+    readTime: "8 mins",
+    description:
+      "Now that you’ve completed some offers, you’re probably hungry for more profits!",
+  },
+  { id: 5, title: "Virgin Bet – £20 in Free Bets", amount: "£15.50" },
+  { id: 6, title: "William Hill – £30 in Free Bets", amount: "£23.50" },
+  {
+    id: 7,
+    title: "Save Time with an Odds Matcher",
+    image: "/images/imageMainContent/card3.svg",
+    readTime: "3 mins",
+    description:
+      "An odds matcher can save you time when finding what event and market to place your back and lay bets on.",
+  },
+  { id: 8, title: "Ladbrokes – £20 in Free Bets", amount: "£15.75" },
+  { id: 9, title: "Bet UK – £30 in Free Bets", amount: "£21.50" },
+  { id: 10, title: "BoyleSports – £20 Free Bet", amount: "£15.00" },
+  { id: 11, title: "Paddy Power – £30 Free Bet", amount: "£23.75" },
+  {
+    id: 12,
+    title: "Renew your Smarkets 0% commission",
+    image: "/images/imageMainContent/card4.jpg",
+    readTime: "4 mins",
+    description:
+      "Eventually, your 0% commission at Smarkets that was part of your welcome offer will expire.",
+  },
+];
