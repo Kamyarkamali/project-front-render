@@ -283,24 +283,45 @@ export const steps = [
     id: 1,
     title: "The Fundamentals",
     amount: "£37.00",
+    guaranteed: "Guaranteed",
     description:
       "Matched betting is a simple betting technique that takes advantage of bookmaker promotions to make a profit no matter the outcome of the event you’re betting on.",
     readTime: "15 mins",
     image: "/images/imageMainContent/card1.svg",
   },
-  { id: 2, title: "Coral – £20 in Free Bets", amount: "£15.75" },
-  { id: 3, title: "Sky Bet – £30 in Free Bets", amount: "£23.75" },
+  {
+    id: 2,
+    title: "Coral – £20 in Free Bets",
+    amount: "£15.75",
+    guaranteed: "Guaranteed",
+  },
+  {
+    id: 3,
+    title: "Sky Bet – £30 in Free Bets",
+    amount: "£23.75",
+    guaranteed: "Guaranteed",
+  },
   {
     id: 4,
     title: "Matt’s Top Tips for Matched Betting Newbies",
     image: "/images/imageMainContent/cardd.svg",
-
+    guaranteed: "Guaranteed",
     readTime: "8 mins",
     description:
       "Now that you’ve completed some offers, you’re probably hungry for more profits!",
   },
-  { id: 5, title: "Virgin Bet – £20 in Free Bets", amount: "£15.50" },
-  { id: 6, title: "William Hill – £30 in Free Bets", amount: "£23.50" },
+  {
+    id: 5,
+    title: "Virgin Bet – £20 in Free Bets",
+    amount: "£15.50",
+    guaranteed: "Guaranteed",
+  },
+  {
+    id: 6,
+    title: "William Hill – £30 in Free Bets",
+    amount: "£23.50",
+    guaranteed: "Guaranteed",
+  },
   {
     id: 7,
     title: "Save Time with an Odds Matcher",

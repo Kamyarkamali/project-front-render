@@ -6,15 +6,17 @@ import { steps } from "@/data/localData";
 
 export default function AcademyPage() {
   return (
-    <div className="max-w-[1200px] overflow-x-hidden mx-auto flex flex-col items-center mt-10 px-4">
+    <div className="max-w-[1200px]  overflow-x-hidden mx-auto flex flex-col items-center mt-[111px] px-4">
       {/* Title Section */}
       <div className="text-center mb-8">
-        <h2 className="font-bold text-3xl text-[#0B3C3A]">
+        <h2 className="font-bold text-5xl text-[#0B3C3A]">
           Matched Betting Academy
         </h2>
-        <p className="text-[#0B3C3A] leading-8 max-w-[900px] mt-4">
+        <p className="text-[#0F5165] text-[16px] leading-8 text-left mt-[3rem]">
           This is the place to start if you’re new to matched betting. My course
-          gives you a structured approach, tackling offers in the optimal order.
+          gives your matched betting structure, with each guide breaking
+          strategies into straightforward steps. You’ll tackle offers in the
+          optimal order, building your bankroll and profits as you go.
         </p>
       </div>
 
@@ -37,27 +39,35 @@ export default function AcademyPage() {
             <div className="sm:ml-8 p-4 w-full transition-all duration-300 cursor-pointer flex items-center gap-4 bg-white text-black rounded-lg hover:shadow-md hover:scale-100 shadow-sm flex-grow flex-col sm:flex-row">
               {step.image && (
                 <div className="relative w-full sm:w-[300px] h-[200px] rounded-lg sm:h-[200px] flex-shrink-0 overflow-hidden">
-                  <Image
-                    src={step.image}
-                    alt={step.title}
-                    width={900}
-                    height={800}
-                    className="absolute top-0 left-0 w-full h-full object-cover"
-                  />
+                  <div className="flex flex-col items-center">
+                    {step.image ? (
+                      <div>
+                        <p>{step.guaranteed}</p>
+                        <p>{step.amount}</p>
+                      </div>
+                    ) : null}
+                    <Image
+                      src={step.image}
+                      alt={step.title}
+                      width={900}
+                      height={800}
+                      className="absolute top-0 left-0 w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               )}
               <div className="text-center sm:text-left w-full">
                 <h3 className="font-semibold text-lg text-[#0F514E]">
                   {step.title}
                 </h3>
-                {step.amount && (
+                {/* {step.amount && (
                   <p className="mt-2 bg-[#29E0CB] p-3 rounded-lg font-bold text-[#0F514E] inline-block">
                     {step.guaranteed && (
                       <span className="text-cyan-500">Guaranteed </span>
                     )}
                     {step.amount}
                   </p>
-                )}
+                )} */}
                 {step.description && (
                   <p className="mt-2 text-[16px] leading-[30px] text-[#0F514E]">
                     {step.description}
