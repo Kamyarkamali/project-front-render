@@ -305,7 +305,7 @@ export const steps = [
     id: 4,
     title: "Matt’s Top Tips for Matched Betting Newbies",
     image: "/images/imageMainContent/cardd.svg",
-    guaranteed: "Guaranteed",
+
     readTime: "8 mins",
     description:
       "Now that you’ve completed some offers, you’re probably hungry for more profits!",
@@ -327,17 +327,39 @@ export const steps = [
     title: "Save Time with an Odds Matcher",
     image: "/images/imageMainContent/card3.svg",
     readTime: "3 mins",
+
     description:
       "An odds matcher can save you time when finding what event and market to place your back and lay bets on.",
   },
-  { id: 8, title: "Ladbrokes – £20 in Free Bets", amount: "£15.75" },
-  { id: 9, title: "Bet UK – £30 in Free Bets", amount: "£21.50" },
-  { id: 10, title: "BoyleSports – £20 Free Bet", amount: "£15.00" },
-  { id: 11, title: "Paddy Power – £30 Free Bet", amount: "£23.75" },
+  {
+    id: 8,
+    title: "Ladbrokes – £20 in Free Bets",
+    amount: "£15.75",
+    guaranteed: "Guaranteed",
+  },
+  {
+    id: 9,
+    title: "Bet UK – £30 in Free Bets",
+    amount: "£21.50",
+    guaranteed: "Guaranteed",
+  },
+  {
+    id: 10,
+    title: "BoyleSports – £20 Free Bet",
+    amount: "£15.00",
+    guaranteed: "Guaranteed",
+  },
+  {
+    id: 11,
+    title: "Paddy Power – £30 Free Bet",
+    amount: "£23.75",
+    guaranteed: "Guaranteed",
+  },
   {
     id: 12,
     title: "Renew your Smarkets 0% commission",
     image: "/images/imageMainContent/card4.jpg",
+
     readTime: "4 mins",
     description:
       "Eventually, your 0% commission at Smarkets that was part of your welcome offer will expire.",

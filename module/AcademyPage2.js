@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { steps } from "@/data/localData";
+import { IoLockOpen } from "react-icons/io5";
 
 export default function AcademyPage() {
   return (
@@ -36,44 +37,54 @@ export default function AcademyPage() {
             </div>
 
             {/* Step Content */}
-            <div className="sm:ml-8 p-4 w-full transition-all duration-300 cursor-pointer flex items-center gap-4 bg-white text-black rounded-lg hover:shadow-md hover:scale-100 shadow-sm flex-grow flex-col sm:flex-row">
+            <div className="sm:ml-8 p-0 m-0 w-full  transition-all duration-300 cursor-pointer flex items-stretch bg-white text-black rounded-4xl hover:shadow-md hover:scale-100 shadow-sm flex-grow flex-col sm:flex-row">
               {step.image && (
-                <div className="relative w-full sm:w-[300px] h-[200px] rounded-lg sm:h-[200px] flex-shrink-0 overflow-hidden">
-                  <div className="flex flex-col items-center">
-                    {step.image ? (
-                      <div>
-                        <p>{step.guaranteed}</p>
-                        <p>{step.amount}</p>
-                      </div>
-                    ) : null}
-                    <Image
-                      src={step.image}
-                      alt={step.title}
-                      width={900}
-                      height={800}
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                    />
+                <div className="relative w-fit  h-fit flex-shrink-0 overflow-hidden">
+                  {step.image && step.guaranteed && step.amount && (
+                    <div className="flex items-center gap-4 bg-[#29E0CB] w-[200px] p-4 rounded-4xl rounded-b-none rounded-r-none">
+                      <p className="text-[18px]">{step.guaranteed}</p>
+                      <p className="font-bold">{step.amount}</p>
+                      <IoLockOpen size={30} color="black" />
+                    </div>
+                  )}
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    width={900}
+                    height={800}
+                    className="w-[400px] object-cover rounded-4xl"
+                  />
+                </div>
+              )}
+              {step.image ? (
+                <div className="text-center sm:text-left w-full p-4">
+                  <h3 className="font-semibold  text-lg text-[#0F514E]">
+                    {step.title}
+                  </h3>
+                  {step.description && (
+                    <p className="mt-2 text-[16px] leading-[30px] text-[#0F514E]">
+                      {step.description}
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <div className="text-center sm:text-left w-full rounded-4xl h-[70px] flex justify-between">
+                  <div className="flex items-center gap-4 bg-[#29E0CB] rounded-4xl rounded-r-none w-[200px] pl-4">
+                    <p>{step.guaranteed}</p>
+                    <p className="font-bold">{step.amount}</p>
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <p className="font-bold text-xl text-[#0F514E]">
+                      {step.title}
+                    </p>
+                    <p>{step.description}</p>
+                  </div>
+                  <div className=" p-5 flex items-center gap-4">
+                    <p>1</p>
+                    <p>2</p>
                   </div>
                 </div>
               )}
-              <div className="text-center sm:text-left w-full">
-                <h3 className="font-semibold text-lg text-[#0F514E]">
-                  {step.title}
-                </h3>
-                {/* {step.amount && (
-                  <p className="mt-2 bg-[#29E0CB] p-3 rounded-lg font-bold text-[#0F514E] inline-block">
-                    {step.guaranteed && (
-                      <span className="text-cyan-500">Guaranteed </span>
-                    )}
-                    {step.amount}
-                  </p>
-                )} */}
-                {step.description && (
-                  <p className="mt-2 text-[16px] leading-[30px] text-[#0F514E]">
-                    {step.description}
-                  </p>
-                )}
-              </div>
             </div>
           </div>
         ))}
