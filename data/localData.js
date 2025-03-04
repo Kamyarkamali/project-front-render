@@ -25,8 +25,10 @@ export const dataMenu = [
     submenu1: [
       {
         id: 1,
-        shortDesc: "A BIT OF SOMETHING EXTRA…",
-        desc: "Once you’re comfortable with your matched betting, why not give one of these a try to make a bit of extra cash…",
+        item1dsc: "Casino Promotions",
+        item2desc:
+          "Its ' not just bookmarks that give welcome offers. Online casions  do too,and they provide the perfect compliment to  matched betting.",
+        image: "/icon/submenu.svg",
       },
       {
         id: 2,
@@ -226,14 +228,9 @@ export const dataMenu = [
     title: "GET STARTED",
     submenu5: [
       {
-        id: 27,
-        submenu5: [
-          {
-            id: 28,
-            item1dsc: "What is Matched Betting?",
-            item2desc: "Matched Betting Guide",
-          },
-        ],
+        id: 28,
+        item1dsc: "What is Matched Betting?",
+        item2desc: "Matched Betting Guide",
       },
     ],
   },

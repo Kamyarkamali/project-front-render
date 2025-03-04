@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ModalSearchBar from "./ModalSearchBar";
 import Modal2 from "./Modal2";
 
 function TopMenuRight({ item }) {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(null);
+  const closeTimeout = useRef(null);
 
   const handleMouseEnter = () => {
     if (item.image === "/icon/icon2.png") {
@@ -14,20 +15,28 @@ function TopMenuRight({ item }) {
     }
   };
 
-  const width =
-    item.title === "LOGIN" || item.title === "FORUM"
-      ? "hidden"
-      : "w-[300px] h-[300px]";
-  const height =
-    item.title === "LOGIN" || item.title === "FORUM"
-      ? "hidden"
-      : "w-[300px] h-[300px]";
+  const handleMouseEnterModal = () => {
+    if (closeTimeout.current) {
+      clearTimeout(closeTimeout.current);
+    }
+    setIsHovered(null);
+    setTimeout(() => {
+      setIsHovered(item.id);
+    }, 0);
+  };
+
+  const handleMouseLeaveModal = () => {
+    closeTimeout.current = setTimeout(() => {
+      setIsHovered(null);
+    }, 500);
+  };
 
   return (
     <div className="flex items-center">
-      <span className="text-[0.875rem] font-bold cursor-pointer hover:text-gray-400 transian-color duration-300 ">
+      <span className="text-[0.875rem] font-bold cursor-pointer hover:text-gray-400 transition-color duration-300">
         <Link
-          onMouseEnter={() => setIsHovered(item.id)}
+          onMouseEnter={handleMouseEnterModal}
+          onMouseLeave={handleMouseLeaveModal}
           href={item.href ? item.href : "#"}
         >
           {item.title ? item.title : ""}
@@ -43,7 +52,7 @@ function TopMenuRight({ item }) {
       <div className="relative">
         <img
           onMouseEnter={handleMouseEnter}
-          className={`w-4 h-4 cursor-pointer  ${
+          className={`w-4 h-4 cursor-pointer ${
             item.image ? "block" : "hidden"
           }`}
           src={item.image ? item.image : ""}
@@ -60,11 +69,15 @@ function TopMenuRight({ item }) {
       )}
       {isHovered === item.id && (
         <div
-          onMouseEnter={() => setIsHovered(item.id)}
-          onMouseLeave={() => setIsHovered(null)}
-          className={`absolute top-13 left-0 right-0 shadow-lg w-full p-3 h-[200px] z-20 bg-white ${width} ${height}`}
+          onMouseEnter={handleMouseEnterModal}
+          onMouseLeave={handleMouseLeaveModal}
+          className={`bg-white ${
+            item.title === "LEARN" || item.title === "GET STARTED"
+              ? "left-[50rem] w-[300px] "
+              : "left-0 w-full h-fit"
+          } absolute top-13  right-0 shadow-lg p-3 z-20 rounded-lg`}
         >
-          <Modal2 />
+          <Modal2 item={item} />
         </div>
       )}
     </div>
