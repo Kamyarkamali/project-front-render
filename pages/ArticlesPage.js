@@ -2,6 +2,10 @@ import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa6";
 
 function ArticlesPage({ blogData }) {
+  if (!blogData) {
+    return <h1>Blog not found</h1>;
+  }
+
   return (
     <div className="px-4 md:px-10 lg:px-20">
       {/* Breadcrumb */}
@@ -19,17 +23,25 @@ function ArticlesPage({ blogData }) {
       </div>
 
       {/* Image */}
-      <img
-        src={blogData.images2}
-        alt={blogData.title}
-        className="w-full max-w-[900px] mx-auto rounded-lg mt-4"
-      />
+      {blogData.images2 ? (
+        <img
+          src={blogData.images2}
+          alt={blogData.title}
+          className="w-full max-w-[900px] mx-auto rounded-lg mt-4"
+        />
+      ) : (
+        <div className="w-full max-w-[900px] mx-auto rounded-lg mt-4">
+          {/* Display a default image or message */}
+          <p>No image available</p>
+        </div>
+      )}
 
       {/* Title & Date */}
       <div className="flex flex-col items-center mt-8 gap-4 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-[#0B3C3A]">
-          {blogData.title}
+          {blogData.title || "No Title Available"}
         </h1>
+
         <div className="flex items-center gap-3 text-[#B6978F] text-sm md:text-base">
           <p>Updated:</p>
           <p>{blogData.date}</p>
@@ -77,12 +89,12 @@ function ArticlesPage({ blogData }) {
           img: blogData.imagesscroll1,
         },
         {
-          title: blogData.titlescroll4,
+          title: blogData.titlescroll5,
           descs: [blogData.descscoroll12start, blogData.descscoroll14end],
           img: blogData.imagesscroll2,
         },
         {
-          title: blogData.titlescroll5,
+          title: blogData.titlescroll6,
           descs: [blogData.descscoroll15, blogData.titlescroll6end],
         },
       ].map((section, index) => (
