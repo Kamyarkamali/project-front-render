@@ -3,7 +3,6 @@ import { FaArrowRight } from "react-icons/fa6";
 function MainSection3() {
   return (
     <div className="flex flex-col gap-6 items-center mt-[9rem] px-4">
-      {/* عنوان اصلی */}
       <div>
         <p className="text-[28px] text-[#0B3C3A] text-center lg:text-left">
           <span className="font-bold">The simplest way to learn.</span> Bar
@@ -11,7 +10,6 @@ function MainSection3() {
         </p>
       </div>
 
-      {/* تصویر در موبایل زیر عنوان نمایش داده می‌شود */}
       <div className="w-full flex justify-center lg:hidden">
         <img
           className="w-[90%] md:w-[70%] max-w-[800px]"
@@ -20,7 +18,6 @@ function MainSection3() {
         />
       </div>
 
-      {/* بخش متن و تصویر در دسکتاپ */}
       <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-8">
         {/* متن */}
         <div className="flex gap-4 flex-col text-center lg:text-left">
@@ -39,7 +36,6 @@ function MainSection3() {
           </button>
         </div>
 
-        {/* تصویر در دسکتاپ */}
         <div className="hidden lg:block">
           <img
             className="w-[800px]"

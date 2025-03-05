@@ -3,16 +3,13 @@ import React from "react";
 function MainContent5() {
   return (
     <div className="mt-[7rem]">
-      {/* تیتر اصلی */}
       <div className="flex justify-center">
         <p className="text-[29px] text-[#0B3C3A] font-bold text-center">
           A flexible, convenient second income
         </p>
       </div>
 
-      {/* بخش تصویر و متن */}
       <div className="flex flex-col-reverse md:flex-col-reverse lg:flex-row-reverse justify-between gap-4 mt-[3rem] items-center">
-        {/* 📌 عکس در موبایل و تبلت بالای متن‌ها - در دسکتاپ چپ */}
         <div className="order-2">
           <img
             className="w-[800px] md:w-[900px]"
@@ -21,7 +18,6 @@ function MainContent5() {
           />
         </div>
 
-        {/* متن‌ها */}
         <div className="sm:pr-19 pl-9 sm:pl-0 flex flex-col gap-9 md:text-left order-1">
           <div className="flex flex-col gap-4">
             <h4 className="font-bold text-[#0B3C3A] text-[22px]">
@@ -55,7 +51,6 @@ function MainContent5() {
         </div>
       </div>
 
-      {/* دکمه نهایی */}
       <div className="flex justify-center mt-[3rem]">
         <button className="border-[1px] p-3 border-[#29E0CB] rounded-lg cursor-pointer">
           What is Matched Betting?

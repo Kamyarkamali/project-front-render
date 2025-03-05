@@ -29,14 +29,125 @@ export const dataMenu = [
         item2desc:
           "Its ' not just bookmarks that give welcome offers. Online casions  do too,and they provide the perfect compliment to  matched betting.",
         image: "/icon/submenu.svg",
+        href: "casino-offer-introduction",
+        blogs: {
+          id: 1,
+          images: "/blogs/1.svg",
+          title: "Casino Offer Introduction",
+          date: "February 19, 2025",
+          images2: "/blogs/guide-header-casino-intro.svg",
+          desc1:
+            "When it comes to matched betting, time is everything. Completing offers efficiently before moving on to the next one is essential to maximise your hourly profit. When considering a premium matched betting service, it’s about weighing up your time saved and extra profit against the additional cost of the service itself.",
+          desc2:
+            "A premium matched betting service generally offers tools that a free site like mine cannot, such as scanning live odds to find the most profitable back and lay opportunities for specific offer types. These are necessary for some offers to be worthwhile.",
+          desc3:
+            "If you’re new to matched betting, you will naturally start more slowly before building up confidence and speed. If this is you, my free Matched Betting Academy should be your first port of call. It allows you to profit from every available welcome offer in a structured, logical and staged approach. It introduces new concepts gradually, keeps you on track and won’t cost you a penny. Only once you hit a certain level of confidence will the time-saving tools of a premium service come into their own. That will vary for different people – some may know after their first few offers, and others may want to take their time and complete a good chunk of welcome offers first.",
+          titlescroll1: "What is OddsMonkey?",
+          descscoroll1start:
+            "OddsMonkey is a subscription-based matched betting service that shows users how to profit from bookmaker, casino and bingo offers.",
+          descscoroll2:
+            "When OddsMonkey launched in August 2011, they were solely an odds-matching service. Their software was the first of its kind, enabling users to compare back and lay odds instantly and avoid much of the legwork in finding bets.",
+          descscoroll3end:
+            "Today, they offer a comprehensive set of tools. They have the original OddsMatcher, plus 2UP, Extra Place, Racing, Each Way, Dutch and BOG Matchers. There’s also an Acca Finder, Profit Tracker and over 15 calculators for specific offer types and scenarios. Some of the tools are worth the subscription fee on their own. The fact you get access to all of them sweetens the deal further.",
+          titlescroll2: "Pricing",
+          descscoroll4start:
+            "Premium is £39.99 per month or £249.99 for the year. You can access a wide range of matched betting content, tools, support and profit tracking.",
+          descscoroll5:
+            "As I said before, it’s a case of weighing up how much more you can make compared to the subscription price. Once you’re confident with matched betting, some of their tools alone can be worth the subscription price.",
+          descscoroll6:
+            "All Access is £49.99 per month or £349.99 for the year. It includes everything in Premium, plus access to the Each Way Pro and BOG Matcher – more on those shortly. You’ll also get full access to their casino content and tools. You can make a lot of profit from casino offers – just as you can from matched betting. It also dovetails nicely with your matched betting activities. I’ll go into more detail later, but it’s worth considering.",
+          descscoroll7end:
+            "There’s another bonus when signing up for OddsMonkey. The price you sign up at is the price you will pay for the lifetime of your account. That can even include if you signed up at a discounted rate on an annual plan. They have members who signed up in the early days and are still only paying £5 per month today.",
+          titlescroll3: "0% Smarkets commission",
+          descscoroll8start:
+            "OddsMonkey also allows you to get 0% commission for existing Smarkets customers – not just a limited period for new customers. All you need to do is place a bet on Smarkets each month via OddsMonkey’s OddsMatcher, and you’ll receive 30 days of 0% commission with Smarkets.",
+          descscoroll9end:
+            "If you use Smarkets as your primary exchange (and I recommend you do), this alone can save you close to, or even more than, the monthly subscription fee.",
+          titlescroll4: "What tools do they have?",
+          descscoroll10:
+            "Their odds matcher was the original and is still an excellent tool. It compares the odds from over 80 bookmakers, with the best back and lay bets at the top of the pile. It helps you squeeze every penny out of the offers available",
+          descscoroll11end:
+            "Compared to other odds matchers, users have commented that they can find opportunities that don’t appear on rival services.",
+          imagesscroll1: "/blogs/oddsmonkey-review-oddsmatcher.jpg",
+          descroll12:
+            "Just be careful when using an odds matcher that you avoid falling into the trap of always choosing the most profitable option every time. Constantly doing so or selecting events that are obscure to the casual bettor can result in a bookmaker flagging your account and placing restrictions on you. These can include being unable to claim offers or limiting your bet amount. Luckily, they have multiple filters to help you select appropriate bets.",
+          titlescroll4: "Casino and bingo offers",
+          descscoroll12start:
+            "Aside from matched betting, OddsMonkey also cover casino and bingo offers on their All Access tier.",
+          imagesscroll2: "/blogs/2.jpg",
+          descscoroll13:
+            "Casino offers can be hugely profitable and complement your matched betting income perfectly. Whereas matched betting occurs around sporting events, you can do casino offers anytime and complete an offer in one sitting. By doing the most profitable matched betting offers and the best casino offers, you can maximise your time and profit per hour!",
+          descscoroll14end:
+            "If you have yet to try them, I have an introduction to casino offers you can access for free. I even walk you through a couple of offers step by step to show you exactly how they work while making some profit along the way. There are a few things to consider, like dealing with variance, but in the long run, your profits should trend towards the ‘expected value’. My guide explains all of this in detail.",
+          titlescroll5: "Conclusion",
+          descscoroll15:
+            "When you hit a certain point in your matched betting journey, you will want to try some of the premium tools to either save you time or give you access to opportunities that are not practical otherwise.",
+          titlescroll6end:
+            "When you’re ready to take that step, opt for OddsMonkey. There are so many tools that increase your profits, some of which can justify the monthly subscription on their own. Put their 0% Smarkets commission, chat and email support and thriving community on top of this, and you’ve got yourself a no-brainer for any matched bettor",
+        },
       },
       {
         id: 2,
-        item1dsc: "Casino Promotions",
+        item1dsc: "OddsMonkey",
         item2desc:
-          "Its ' not just bookmarks that give welcome offers. Online casions  do too,and they provide the perfect compliment to  matched betting.",
+          "Maximise your matched  betting profits  whit their fantastic range of matched betting tools.",
         image: "/icon/submenu.svg",
-        href: "/casino-offer-introduction",
+        href: "oddsmonkey-review",
+        blogs: {
+          id: 2,
+          images: "/blogs/1.svg",
+          title: "OddsMonkey Review",
+          date: "February 19, 2025",
+          images2: "/blogs/oddsmonkey-banner-logo-2.jpg",
+          desc1:
+            "When it comes to matched betting, time is everything. Completing offers efficiently before moving on to the next one is essential to maximise your hourly profit. When considering a premium matched betting service, it’s about weighing up your time saved and extra profit against the additional cost of the service itself.",
+          desc2:
+            "A premium matched betting service generally offers tools that a free site like mine cannot, such as scanning live odds to find the most profitable back and lay opportunities for specific offer types. These are necessary for some offers to be worthwhile.",
+          desc3:
+            "If you’re new to matched betting, you will naturally start more slowly before building up confidence and speed. If this is you, my free Matched Betting Academy should be your first port of call. It allows you to profit from every available welcome offer in a structured, logical and staged approach. It introduces new concepts gradually, keeps you on track and won’t cost you a penny. Only once you hit a certain level of confidence will the time-saving tools of a premium service come into their own. That will vary for different people – some may know after their first few offers, and others may want to take their time and complete a good chunk of welcome offers first.",
+          titlescroll1: "What is OddsMonkey?",
+          descscoroll1start:
+            "OddsMonkey is a subscription-based matched betting service that shows users how to profit from bookmaker, casino and bingo offers.",
+          descscoroll2:
+            "When OddsMonkey launched in August 2011, they were solely an odds-matching service. Their software was the first of its kind, enabling users to compare back and lay odds instantly and avoid much of the legwork in finding bets.",
+          descscoroll3end:
+            "Today, they offer a comprehensive set of tools. They have the original OddsMatcher, plus 2UP, Extra Place, Racing, Each Way, Dutch and BOG Matchers. There’s also an Acca Finder, Profit Tracker and over 15 calculators for specific offer types and scenarios. Some of the tools are worth the subscription fee on their own. The fact you get access to all of them sweetens the deal further.",
+          titlescroll2: "Pricing",
+          descscoroll4start:
+            "Premium is £39.99 per month or £249.99 for the year. You can access a wide range of matched betting content, tools, support and profit tracking.",
+          descscoroll5:
+            "As I said before, it’s a case of weighing up how much more you can make compared to the subscription price. Once you’re confident with matched betting, some of their tools alone can be worth the subscription price.",
+          descscoroll6:
+            "All Access is £49.99 per month or £349.99 for the year. It includes everything in Premium, plus access to the Each Way Pro and BOG Matcher – more on those shortly. You’ll also get full access to their casino content and tools. You can make a lot of profit from casino offers – just as you can from matched betting. It also dovetails nicely with your matched betting activities. I’ll go into more detail later, but it’s worth considering.",
+          descscoroll7end:
+            "There’s another bonus when signing up for OddsMonkey. The price you sign up at is the price you will pay for the lifetime of your account. That can even include if you signed up at a discounted rate on an annual plan. They have members who signed up in the early days and are still only paying £5 per month today.",
+          titlescroll3: "0% Smarkets commission",
+          descscoroll8start:
+            "OddsMonkey also allows you to get 0% commission for existing Smarkets customers – not just a limited period for new customers. All you need to do is place a bet on Smarkets each month via OddsMonkey’s OddsMatcher, and you’ll receive 30 days of 0% commission with Smarkets.",
+          descscoroll9end:
+            "If you use Smarkets as your primary exchange (and I recommend you do), this alone can save you close to, or even more than, the monthly subscription fee.",
+          titlescroll4: "What tools do they have?",
+          descscoroll10:
+            "Their odds matcher was the original and is still an excellent tool. It compares the odds from over 80 bookmakers, with the best back and lay bets at the top of the pile. It helps you squeeze every penny out of the offers available",
+          descscoroll11end:
+            "Compared to other odds matchers, users have commented that they can find opportunities that don’t appear on rival services.",
+          imagesscroll1: "/blogs/oddsmonkey-review-oddsmatcher.jpg",
+          descroll12:
+            "Just be careful when using an odds matcher that you avoid falling into the trap of always choosing the most profitable option every time. Constantly doing so or selecting events that are obscure to the casual bettor can result in a bookmaker flagging your account and placing restrictions on you. These can include being unable to claim offers or limiting your bet amount. Luckily, they have multiple filters to help you select appropriate bets.",
+          titlescroll4: "Casino and bingo offers",
+          descscoroll12start:
+            "Aside from matched betting, OddsMonkey also cover casino and bingo offers on their All Access tier.",
+          imagesscroll2: "/blogs/2.jpg",
+          descscoroll13:
+            "Casino offers can be hugely profitable and complement your matched betting income perfectly. Whereas matched betting occurs around sporting events, you can do casino offers anytime and complete an offer in one sitting. By doing the most profitable matched betting offers and the best casino offers, you can maximise your time and profit per hour!",
+          descscoroll14end:
+            "If you have yet to try them, I have an introduction to casino offers you can access for free. I even walk you through a couple of offers step by step to show you exactly how they work while making some profit along the way. There are a few things to consider, like dealing with variance, but in the long run, your profits should trend towards the ‘expected value’. My guide explains all of this in detail.",
+          titlescroll5: "Conclusion",
+          descscoroll15:
+            "When you hit a certain point in your matched betting journey, you will want to try some of the premium tools to either save you time or give you access to opportunities that are not practical otherwise.",
+          titlescroll6end:
+            "When you’re ready to take that step, opt for OddsMonkey. There are so many tools that increase your profits, some of which can justify the monthly subscription on their own. Put their 0% Smarkets commission, chat and email support and thriving community on top of this, and you’ve got yourself a no-brainer for any matched bettor",
+        },
       },
       {
         id: 3,

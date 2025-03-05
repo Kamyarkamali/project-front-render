@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Modal2({ item }) {
@@ -7,7 +8,8 @@ function Modal2({ item }) {
   return (
     <div className="grid grid-cols-2 items-center gap-5 mx-auto max-w-[1000px]">
       {submenu.map((item) => (
-        <div
+        <Link
+          href={item.href ? item.href : "#"}
           key={item.id}
           className={` flex items-center gap-3 ${
             item.item1dsc === "What is Matched Betting?" ||
@@ -25,7 +27,7 @@ function Modal2({ item }) {
               {item.item2desc}
             </p>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
