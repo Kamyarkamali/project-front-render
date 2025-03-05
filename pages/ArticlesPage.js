@@ -1,3 +1,6 @@
+import ShareBtnfooter from "@/button/ShareBtnfooter";
+import Comments from "@/module/Comments";
+import SearchBtm from "@/module/SearchBtm";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa6";
 
@@ -121,6 +124,9 @@ function ArticlesPage({ blogData }) {
           )}
         </div>
       ))}
+      <SearchBtm />
+      <ShareBtnfooter />
+      <Comments />
     </div>
   );
 }

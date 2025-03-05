@@ -337,6 +337,7 @@ export const dataMenu = [
   {
     id: 26,
     title: "GET STARTED",
+    href: "academy",
     submenu5: [
       {
         id: 28,
