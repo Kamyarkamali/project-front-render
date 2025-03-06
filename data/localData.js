@@ -477,3 +477,48 @@ export const steps = [
       "Eventually, your 0% commission at Smarkets that was part of your welcome offer will expire.",
   },
 ];
+
+export const dataEharIs = [
+  {
+    id: 1,
+    image: "/images/what-is-matched-betting-header.svg",
+    title: "What is Matched Betting?",
+    title1: "In a nutshell",
+    desc1:
+      "Matched betting is the process of covering all outcomes of an event in order to qualify for free bets and bonuses for next to nothing. You can then use the same process to turn those free bets and bonuses into cash.",
+    desc2:
+      "Matched betting isn’t about insider sports knowledge or taking risks. You use simple maths that’s easy to learn and make a predictable profit from every offer you claim.",
+    desc3:
+      "This page will give you a comprehensive overview of what matched betting is and how it works and answer the most common questions. At the end, you should have a good understanding of the overall concept and be ready for the more detailed step-by-step walkthrough of claiming your first offer in my free matched betting academy.",
+  },
+  {
+    id: 2,
+    image1: "/whatis/1.svg",
+    titleimg1: "1.How it works",
+  },
+  {
+    id: 3,
+    image1: "/whatis/2.svg",
+    titleimg2: "2.Building up profit",
+  },
+  {
+    id: 4,
+    image1: "/whatis/3.svg",
+    titleimg1: "3.FAQ",
+  },
+  {
+    id: 5,
+    image1: "/whatis/4.svg",
+    titleimg1: "4.Back & lay bets",
+  },
+  {
+    id: 6,
+    image1: "/whatis/5.svg",
+    titleimg1: "5.What you need to get started",
+  },
+  {
+    id: 7,
+    image1: "/whatis/6.svg",
+    titleimg1: "6.Learn matched betting",
+  },
+];

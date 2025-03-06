@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -14,14 +15,22 @@ function MainContent8() {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        <button className="w-full max-w-[259px] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
-          What is Matched Betting?
-        </button>
-        <button className="w-full max-w-[168px] flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-all duration-300 hover:gap-4 cursor-pointer p-3">
-          Get Started
-          <FaArrowRight />
-        </button>
+      <div className="flex flex-col cursor-pointer lg:flex-row items-center justify-center w-full gap-4">
+        <Link
+          href={"/what-is-matched-betting"}
+          S
+          className="flex items-center gap-2"
+        >
+          <button className="w-full max-w-[259px] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
+            What is Matched Betting?
+          </button>
+        </Link>
+        <Link href={"/academy"} className="flex items-center gap-2">
+          <button className="w-full max-w-[168px] flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-all duration-300 hover:gap-4 cursor-pointer p-3">
+            Get Started
+            <FaArrowRight />
+          </button>
+        </Link>
       </div>
     </div>
   );
