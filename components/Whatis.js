@@ -1,179 +1,221 @@
 import { dataEharIs } from "@/data/localData";
+import Comments from "@/module/Comments";
 import React from "react";
+import DrowpDwon from "@/components/DropDwon";
 
 function Whatis() {
   return (
-    <div>
+    <div className="p-4">
+      {/* بخش عنوان و تصویر */}
       {dataEharIs.map((item) => (
         <div key={item.id} className="flex flex-col">
-          <div className="flex items-center gap-6">
-            <h1 className="text-[38px] text-[#062221] font-bold">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+            <h1 className="text-xl sm:text-2xl md:text-4xl text-[#062221] font-bold">
               {item.title}
             </h1>
-            <img className="w-[400px]" src={item.image ? item.image : null} />
+            {item.image && (
+              <img
+                className="w-full sm:w-[300px] md:w-[400px] mt-4 md:mt-0"
+                src={item.image}
+                alt={item.title}
+              />
+            )}
           </div>
         </div>
       ))}
-      <div>
-        <p className="text-[#062221] text-[20px] font-bold">In a nutshell</p>
+
+      {/* بخش In a nutshell */}
+      <div className="mt-8">
+        <p className="text-[#062221] text-lg sm:text-xl md:text-2xl font-bold">
+          In a nutshell
+        </p>
         {dataEharIs.map((i) => (
-          <div className="flex flex-col w-[700px] mt-[1rem] gap-3 leading-[35px] *:text-[#0F514E] text-[18px]">
+          <div
+            key={i.id}
+            className="flex flex-col w-full md:w-[700px] mt-4 gap-3 leading-7 sm:leading-8 text-[#0F514E] text-sm sm:text-base md:text-lg"
+          >
             <p>{i.desc1}</p>
             <p>{i.desc2}</p>
             <p>{i.desc3}</p>
           </div>
         ))}
-        <div className="flex flex-col p-4">
-          <p className="text-[#062221] text-[20px] font-bold">Contents</p>
-          <div className="mt-[1rem] grid grid-cols-2 p-4">
-            <div className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3">
-              <img className="w-[40px]" src="/whatis/1.svg" />
-              <p className="text-[#20B7C2] text-[17px]">1. How it works</p>
-            </div>
-            <div className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3">
-              <img className="w-[40px]" src="/whatis/2.svg" />
-              <p className="text-[#20B7C2] text-[17px]">
-                2. Building uo profit
-              </p>
-            </div>
-            <div className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3">
-              <img className="w-[40px]" src="/whatis/3.svg" />
-              <p className="text-[#20B7C2] text-[17px]">3. FAQ</p>
-            </div>
-            <div className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3">
-              <img className="w-[40px]" src="/whatis/4.svg" />
-              <p className="text-[#20B7C2] text-[17px]">4. Back & lay bets</p>
-            </div>
-            <div className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3">
-              <img className="w-[40px]" src="/whatis/5.svg" />
-              <p className="text-[#20B7C2] text-[17px]">
-                5. What you need to get started
-              </p>
-            </div>
-            <div className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3">
-              <img className="w-[40px]" src="/whatis/6.svg" />
-              <p className="text-[#20B7C2] text-[17px]">
-                6. LEARN Matched betting
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="mt-[5rem]">
-          <div className="flex justify-between">
-            <div className="flex flex-col">
-              <p className="font-bold">PART 1</p>
-              <p className="text-[38px] font-bold">How it works</p>
-            </div>
-            <img
-              className="w-[100px]"
-              src="/whatis/workspart1.svg"
-              alt="what is"
-            />
-          </div>
-          <div className="border-b-[3px] mt-4 border-[#29E0CB] w-full h-2"></div>
-          <div className="mt-[3rem] *:text-[19px] max-w-[800px] flex flex-col">
-            <p className="max-w-[1000px] text-[#0F514E] leading-[33px]">
-              Bookmakers always try to attract new customers with free bets and
-              bonuses. Usually, it’s something like bet £10, get a £10 free bet.
-              As with many marketing campaigns, the bookmaker takes a short-term
-              hit to get people in the door. They aim to get people hooked and
-              make a profit in the long term
-            </p>
-            <p className="w-[1000px] text-[#0F514E] leading-[33px]">
-              Matched betting is a simple technique that takes advantage of
-              this. By covering all outcomes of an event, you can meet the
-              requirements needed to claim the free bet or bonus without risking
-              large sums of money. It’s not about taking risks or punts, nor do
-              you need to know anything about the event you’re betting on.
-            </p>
-          </div>
-          <div className="mt-[3rem] max-w-[800px] *:text-[19px] flex flex-col">
-            <h3 className="font-bold text-[22px]  mb-4 text-[#0B3C3A]">
-              A simple example
-            </h3>
-            <p className="max-w-[1000px] text-[#0F514E] leading-[33px]">
-              Let’s consider that a bookmaker is running a promotion where you
-              get a free £20 bet if you place a bet of £10 on any event.
-            </p>
-            <p className="w-[1000px] text-[#0F514E] leading-[33px]">
-              For simplicity, the event I’ll use in this example is a coin toss.
-              There are two possible outcomes, heads or tails, with an equal
-              chance of each happening. If you stake £10 on the correct outcome,
-              you’ll get your £10 back, plus an extra £10 – so you’ll be £10 in
-              profit.
-            </p>
-            <p className="w-[1000px] text-[#0F514E] leading-[33px]">
-              If you place a £10 bet on heads and a £10 bet on tails, you’ll
-              lose £10 on one outcome but gain £10 on the other. The two bets
-              will cancel each other out. You will, however, have met the
-              requirements to claim your £20 free bet, which was just that you
-              needed to place a £10 bet. So you’ll get your free bet without
-              having taken any risks. You can see this illustrated in the table
-              below.
-            </p>
-          </div>
+      </div>
 
-          <div className="w-full max-w-[800px] mx-auto p-4">
-            <table className="w-full border-collapse text-center">
-              <thead>
-                <tr className="bg-teal-100">
-                  <th className="p-2">£10 on Heads</th>
-                  <th className="p-2">£10 on Tails</th>
-                  <th className="p-2">Outcome</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="p-2 text-green-600">+ £10</td>
-                  <td className="p-2 text-red-600">- £10</td>
-                  <td className="p-2">
-                    £0 profit +{" "}
-                    <span className="font-semibold">
-                      Qualified for £20 free bet
-                    </span>
-                  </td>
-                </tr>
-                <tr className="bg-gray-100">
-                  <td className="p-2 text-red-600">- £10</td>
-                  <td className="p-2 text-green-600">+ £10</td>
-                  <td className="p-2">
-                    £0 profit +{" "}
-                    <span className="font-semibold">
-                      Qualified for £20 free bet
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <p className="text-[#0F514E] leading-[33px] mt-7 text-[18px]">
-              And that’s it! No sports knowledge is required!
+      {/* بخش Contents */}
+      <div className="flex flex-col p-4">
+        <p className="text-[#062221] text-lg sm:text-xl md:text-2xl font-bold">
+          Contents
+        </p>
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 p-4">
+          {[1, 2, 3, 4, 5, 6].map((num) => (
+            <div
+              key={num}
+              className="flex p-4 border-b-[0.5px] border-[#20B7C2] items-center gap-3"
+            >
+              <img
+                className="w-8 sm:w-10"
+                src={`/whatis/${num}.svg`}
+                alt={`Icon ${num}`}
+              />
+              <p className="text-[#20B7C2] text-sm sm:text-base md:text-lg">
+                {num}.{" "}
+                {
+                  [
+                    "How it works",
+                    "Building up profit",
+                    "FAQ",
+                    "Back & lay bets",
+                    "What you need to get started",
+                    "LEARN Matched betting",
+                  ][num - 1]
+                }
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* بخش PART 1 */}
+      <div className="mt-12">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col">
+            <p className="font-bold text-sm sm:text-base">PART 1</p>
+            <p className="text-xl sm:text-2xl md:text-4xl font-bold">
+              How it works
             </p>
           </div>
+          <img
+            className="w-16 sm:w-20 md:w-24 mt-4 md:mt-0"
+            src="/whatis/workspart1.svg"
+            alt="what is"
+          />
         </div>
+        <div className="border-b-[3px] mt-4 border-[#29E0CB] w-full h-2"></div>
+        <div className="mt-8 text-sm sm:text-base md:text-lg max-w-full md:max-w-[800px] flex flex-col gap-4">
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            Bookmakers always try to attract new customers with free bets and
+            bonuses. Usually, it’s something like bet £10, get a £10 free bet.
+            As with many marketing campaigns, the bookmaker takes a short-term
+            hit to get people in the door. They aim to get people hooked and
+            make a profit in the long term.
+          </p>
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            Matched betting is a simple technique that takes advantage of this.
+            By covering all outcomes of an event, you can meet the requirements
+            needed to claim the free bet or bonus without risking large sums of
+            money. It’s not about taking risks or punts, nor do you need to know
+            anything about the event you’re betting on.
+          </p>
+        </div>
+      </div>
 
-        <div className="flex flex-col gap-3 *:text-[19px] mt-[2rem]">
-          <p className="font-bold text-[22px] mb-4 text-[#0B3C3A]">
-            Using your free bet
+      {/* بخش PART 2 */}
+      <div className="mt-12">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col">
+            <p className="font-bold text-sm sm:text-base">PART 2</p>
+            <p className="text-xl sm:text-2xl md:text-4xl font-bold">
+              Building up profit
+            </p>
+          </div>
+          <img
+            className="w-16 sm:w-20 md:w-24 mt-4 md:mt-0"
+            src="/whatis/part2.svg"
+            alt="what is"
+          />
+        </div>
+        <div className="border-b-[3px] mt-4 border-[#29E0CB] w-full h-2"></div>
+        <div className="mt-8 text-sm sm:text-base md:text-lg max-w-full md:max-w-[800px] flex flex-col gap-4">
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            Once you’ve completed your first offer, it’s a case of banking your
+            profit and repeating the process with another one. There’s no skill;
+            stick to the process and repeat. Some offers vary slightly in their
+            qualifying requirements, but the fundamentals remain the same. Once
+            you’re comfortable with the standard ‘Bet X, Get Y’ offer, you’ll
+            have no problems picking up the variations.
           </p>
-          <p className="w-[1000px] text-[#0F514E] leading-[33px]">
-            You could place your free bet on something and hope it wins. But, by
-            repeating the process of covering all outcomes again, you can be
-            sure to make a profit no matter the outcome.
-          </p>
-          <p className="w-[1000px] text-[#0F514E] leading-[33px]">
-            I go into much more detail in my full matched betting guide, the
-            first step in my free Matched Betting Academy. I will also walk you
-            through your first real-world offer step by step, from which you
-            will make around £15.
-          </p>
-          <p className="w-[1000px] text-[#0F514E] leading-[33px]">
-            The Academy contains every bookmaker’s welcome offer – over 40, with
-            a total profit exceeding £600. Each has a step-by-step guide so you
-            always know what to do. Beyond that, it teaches you how to take
-            advantage of existing customer offers so you can continue making
-            profits far into the future
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            Finding offers to take advantage of can be very time-consuming if
+            you were to do it yourself. Luckily, that’s where I step in. My
+            Matched Betting Academy lists every new customer offer from UK
+            bookmakers, complete with step-by-step instructions. Any variations
+            in technique are clearly shown and explained. It even teaches you
+            how to profit from existing customer offers to set you up for
+            long-term profits.
           </p>
         </div>
+      </div>
+
+      {/* بخش PART 3 */}
+      <div className="mt-12">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col">
+            <p className="font-bold text-sm sm:text-base">PART 3</p>
+            <p className="text-xl sm:text-2xl md:text-4xl font-bold">
+              Back & lay bets
+            </p>
+          </div>
+          <img
+            className="w-16 sm:w-20 md:w-24 mt-4 md:mt-0"
+            src="/whatis/3.svg"
+            alt="what is"
+          />
+        </div>
+        <div className="border-b-[3px] mt-4 border-[#29E0CB] w-full h-2"></div>
+        <div className="mt-8 text-sm sm:text-base md:text-lg max-w-full md:max-w-[800px] flex flex-col gap-4">
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            In my earlier example, I used a coin toss to demonstrate the basic
+            principle of matched betting. That makes it simple, as there are
+            only two possible outcomes.
+          </p>
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            In the real world, only a few sports have two outcomes. You’ll need
+            to place bets on things like football matches with three outcomes
+            because the two teams could draw. However, you can still cover all
+            outcomes using only two bets.
+          </p>
+        </div>
+      </div>
+
+      <DrowpDwon />
+
+      {/* بخش PART 4 */}
+      <div className="mt-12">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col">
+            <p className="font-bold text-sm sm:text-base">PART 4</p>
+            <p className="text-xl sm:text-2xl md:text-4xl font-bold">
+              What you need to get started
+            </p>
+          </div>
+          <img
+            className="w-16 sm:w-20 md:w-24 mt-4 md:mt-0"
+            src="/whatis/what-is-section-what-you-need.svg"
+            alt="what is"
+          />
+        </div>
+        <div className="border-b-[3px] mt-4 border-[#29E0CB] w-full h-2"></div>
+        <div className="mt-8 text-sm sm:text-base md:text-lg max-w-full md:max-w-[800px] flex flex-col gap-4">
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            You’ll need a small amount of money to place your first bets and
+            qualify for your first free bet – around £100. You’ll get this back,
+            plus your first free bet. If you want to start with a larger amount,
+            you can have multiple offers running alongside each other – so you
+            don’t need the first one to settle before claiming the next.
+          </p>
+          <p className="text-[#0F514E] leading-7 sm:leading-8">
+            Matched betting is a simple technique that takes advantage of this.
+            By covering all outcomes of an event, you can meet the requirements
+            needed to claim the free bet or bonus without risking large sums of
+            money. It’s not about taking risks or punts, nor do you need to know
+            anything about the event you’re betting on.
+          </p>
+        </div>
+      </div>
+
+      {/* بخش کامنت‌ها */}
+      <div className="mt-12">
+        <Comments />
       </div>
     </div>
   );
