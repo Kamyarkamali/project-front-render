@@ -3,11 +3,14 @@ import Link from "next/link";
 import { useState, useRef } from "react";
 import ModalSearchBar from "./ModalSearchBar";
 import Modal2 from "./Modal2";
+import { dataMenu } from "@/data/localData";
 
 function TopMenuRight({ item }) {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(null);
   const closeTimeout = useRef(null);
+
+  console.log(dataMenu);
 
   const handleMouseEnter = () => {
     if (item.image === "/icon/icon2.png") {
@@ -77,6 +80,25 @@ function TopMenuRight({ item }) {
               : "left-0 w-full h-fit"
           } absolute top-13  right-0 shadow-lg p-3 z-20 rounded-lg`}
         >
+          <div
+            className={`${
+              item.title === "EXTRAS" || item.title === "OFFERS"
+                ? "block"
+                : "hidden"
+            } flex flex-col items-center gap-1`}
+          >
+            {dataMenu.map((item) => (
+              <div className="flex flex-col items-center">
+                <p className="text-[#0B3C3A] text-[12px] font-bold">
+                  {item.descshortex ? item.descshortex : ""}
+                </p>
+                <p className="text-[13px] text-[#81919A] mt-1">
+                  {item.desc ? item.desc : ""}
+                </p>
+              </div>
+            ))}
+          </div>
+
           <Modal2 item={item} />
         </div>
       )}

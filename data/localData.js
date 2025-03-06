@@ -22,6 +22,8 @@ export const dataMenu = [
   {
     id: 29,
     title: "EXTRAS",
+    descshortex: "A BIT OF SOMETHING EXTRA ...",
+    desc: "Once you're comfortable white your matched betting,why not give one of these a try to make a bit of extra cash...",
     submenu1: [
       {
         id: 1,
@@ -259,6 +261,7 @@ export const dataMenu = [
   {
     id: 6,
     title: "OFFERS",
+    descshortex2: "SINGUP AND RELOAD OFFERS",
     submenu3: [
       {
         id: 16,

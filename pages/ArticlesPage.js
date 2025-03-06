@@ -12,7 +12,7 @@ function ArticlesPage({ blogData }) {
   return (
     <div className="px-4 md:px-10 lg:px-20">
       {/* Breadcrumb */}
-      <div className="flex items-center gap-3 text-[#24C7B7] text-sm md:text-base">
+      <div className="flex ml-[5rem] items-center gap-3 text-[#24C7B7] text-sm md:text-base">
         <Link className="flex items-center gap-2" href={"/"}>
           <FaArrowLeft />
           <p className="hover:text-[#0F514E] duration-300 cursor-pointer">
