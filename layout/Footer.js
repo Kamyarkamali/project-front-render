@@ -1,7 +1,5 @@
-import { FaTwitter, FaFacebookF, FaReddit } from "react-icons/fa";
-import { MdWhatsapp, MdOutlineMail } from "react-icons/md";
 import Link from "next/link";
-import ShareBtn from "@/module/ShareBtn";
+
 import ShareBtnfooter from "@/button/ShareBtnfooter";
 
 function Footer() {
@@ -19,13 +17,13 @@ function Footer() {
             <div className="flex flex-col mt-3 gap-2">
               <Link
                 className="text-[#628D8B] hover:text-white duration-300"
-                href="/about"
+                href="/contact-me"
               >
                 Contact
               </Link>
               <Link
                 className="text-[#628D8B] hover:text-white duration-300"
-                href="/mustory"
+                href="/my-story"
               >
                 My Story
               </Link>
@@ -87,18 +85,20 @@ function Footer() {
 
       {/* Bottom Text */}
       <div className="max-w-[1200px] mx-auto text-[#628D8B] mt-9 text-center text-sm px-4">
-        <p>
-          * Does not include invite-only offers or offers involved in the more
-          advanced matched betting methods. Figure shown requires a full set of
-          unrestricted accounts.
-        </p>
-        <p className="mt-3">
-          Matched Betting Blog uses cookies to help improve your experience
-          whilst visiting the site. Please see the Privacy Policy for further
-          information on how these are used. By continuing to use the blog, you
-          consent to the use of cookies.
-        </p>
-        <p className="mt-3">© Matched Betting Blog 2025</p>
+        <div className="flex flex-col items-start w-full">
+          <p>
+            * Does not include invite-only offers or offers involved in the more
+            advanced matched betting methods. Figure shown requires a full set
+            of unrestricted accounts.
+          </p>
+          <p className="mt-3">
+            Matched Betting Blog uses cookies to help improve your experience
+            whilst visiting the site. Please see the Privacy Policy for further
+            information on how these are used. By continuing to use the blog,
+            you consent to the use of cookies.
+          </p>
+          <p className="mt-3">© Matched Betting Blog 2025</p>
+        </div>
       </div>
     </div>
   );

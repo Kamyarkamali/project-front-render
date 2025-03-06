@@ -16,17 +16,13 @@ function MainContent8() {
       </div>
 
       <div className="flex flex-col cursor-pointer lg:flex-row items-center justify-center w-full gap-4">
-        <Link
-          href={"/what-is-matched-betting"}
-          S
-          className="flex cursor-pointer items-center gap-2"
-        >
-          <button className="w-full cursor-pointer max-w-[259px] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
+        <Link href={"/what-is-matched-betting"} className="w-full sm:w-auto">
+          <button className="w-full cursor-pointer sm:w-auto border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
             What is Matched Betting?
           </button>
         </Link>
-        <Link href={"/academy"} className="flex items-center gap-2">
-          <button className="w-full max-w-[168px] flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-all duration-300 hover:gap-4 cursor-pointer p-3">
+        <Link href={"/academy"} className="w-full sm:w-auto">
+          <button className="w-full sm:w-auto flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-all duration-300 hover:gap-4 cursor-pointer p-3">
             Get Started
             <FaArrowRight />
           </button>

@@ -31,14 +31,17 @@ function HeroSection() {
 
           {/* دکمه‌ها */}
           <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start mt-[2rem] w-full gap-4">
-            <Link href={"/what-is-matched-betting"}>
-              <button className="lg:w-[259px] cursor-pointer w-full border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
+            <Link
+              href={"/what-is-matched-betting"}
+              className="w-full sm:w-auto"
+            >
+              <button className="w-full cursor-pointer lg:w-[259px] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
                 What is Matched Betting?
               </button>
             </Link>
             <Link
               href={"/academy"}
-              className="w-full lg:w-[259px] flex justify-center"
+              className="w-full sm:w-auto flex justify-center"
             >
               <button className="w-full lg:w-[259px] flex items-center gap-2 justify-center font-bold rounded-lg bg-[#FFD938] hover:bg-[#F7C800] transition-color duration-300 hover:gap-4 cursor-pointer p-3">
                 Get Started
