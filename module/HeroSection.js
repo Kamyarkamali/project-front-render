@@ -31,9 +31,11 @@ function HeroSection() {
 
           {/* دکمه‌ها */}
           <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start mt-[2rem] w-full gap-4">
-            <button className="lg:w-[259px] w-full border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
-              What is Matched Betting?
-            </button>
+            <Link href={"/what-is-matched-betting"}>
+              <button className="lg:w-[259px] cursor-pointer w-full border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
+                What is Matched Betting?
+              </button>
+            </Link>
             <Link
               href={"/academy"}
               className="w-full lg:w-[259px] flex justify-center"

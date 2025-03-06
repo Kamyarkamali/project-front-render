@@ -5,6 +5,8 @@ function Modal2({ item }) {
   const submenuKey = Object.keys(item).find((key) => key.startsWith("submenu"));
   const submenu = submenuKey ? item[submenuKey] : [];
 
+  console.log(submenu);
+
   return (
     <div className="grid grid-cols-2 items-center gap-5 mx-auto max-w-[1000px]">
       {submenu.map((item) => (
@@ -26,11 +28,13 @@ function Modal2({ item }) {
             <img className="w-[50px]" src={item.image} />
             <div className="flex flex-col">
               <p className="text-[#0F514E] w-[300px] font-bold text-[14px]">
-                {item.item1dsc}
+                <Link href={item.href ? item.href : "#"}>{item.item1dsc}</Link>
               </p>
-              <p className="text-[#91888F] text-[12px] leading-[30px] font-bold">
-                {item.item2desc}
-              </p>
+              <Link href={item.href ? item.href : "#"}>
+                <p className="text-[#91888F] text-[12px] leading-[30px] font-bold">
+                  {item.item2desc}
+                </p>
+              </Link>
             </div>
           </Link>
         </>

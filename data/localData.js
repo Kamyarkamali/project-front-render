@@ -329,23 +329,27 @@ export const dataMenu = [
   {
     id: 24,
     title: "LEARN",
+    href: "academy",
+
     submenu4: [
       {
         id: 25,
         item1dsc: "Matched Betting Academy",
         item2desc: "All Guides",
+        href: "academy",
       },
     ],
   },
   {
     id: 26,
     title: "GET STARTED",
-    href: "academy",
+    href: "what-is-matched-betting",
     submenu5: [
       {
         id: 28,
         item1dsc: "What is Matched Betting?",
         item2desc: "Matched Betting Guide",
+        hre: "what-is-matched-betting",
       },
     ],
   },

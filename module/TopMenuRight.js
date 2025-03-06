@@ -10,8 +10,6 @@ function TopMenuRight({ item }) {
   const [isHovered, setIsHovered] = useState(null);
   const closeTimeout = useRef(null);
 
-  console.log(dataMenu);
-
   const handleMouseEnter = () => {
     if (item.image === "/icon/icon2.png") {
       setHover(true);

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function MainContent5() {
@@ -52,9 +53,11 @@ function MainContent5() {
       </div>
 
       <div className="flex justify-center mt-[3rem]">
-        <button className="border-[1px] p-3 border-[#29E0CB] rounded-lg cursor-pointer">
-          What is Matched Betting?
-        </button>
+        <Link href={"/what-is-matched-betting"}>
+          <button className="border-[1px] p-3 border-[#29E0CB] rounded-lg cursor-pointer">
+            What is Matched Betting?
+          </button>
+        </Link>
       </div>
     </div>
   );

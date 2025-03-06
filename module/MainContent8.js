@@ -19,9 +19,9 @@ function MainContent8() {
         <Link
           href={"/what-is-matched-betting"}
           S
-          className="flex items-center gap-2"
+          className="flex cursor-pointer items-center gap-2"
         >
-          <button className="w-full max-w-[259px] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
+          <button className="w-full cursor-pointer max-w-[259px] border-[1px] border-[#0B3C3A] font-bold rounded-lg p-3 text-[#0B3C3A]">
             What is Matched Betting?
           </button>
         </Link>
