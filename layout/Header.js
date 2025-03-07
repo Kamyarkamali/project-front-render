@@ -16,9 +16,6 @@ function Header() {
   const [close, setClose] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setClose(false);
-    }, 4000);
     function handleClickOutside(e) {
       if (
         hamburgerOpen &&

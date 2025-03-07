@@ -203,7 +203,7 @@ export const dataMenu = [
         item2desc:
           "Basic and  advanced modes including under/over and partial lays.",
         image: "/submenuicons1/1.png",
-        href: "/matched-betting-calculator",
+        // href: "/matched-betting-calculator",
       },
       {
         id: 9,
@@ -211,42 +211,42 @@ export const dataMenu = [
         item2desc:
           "Simplifiels the process of each way arbing and extra place offers.",
         image: "/submenuicons1/2.png",
-        href: "/each-way-calculator",
+        // href: "/each-way-calculator",
       },
       {
         id: 10,
         item1dsc: "Sequential Lay Calculator",
         item2desc: "Sequnetial lay betting for non-overlapping events.",
         image: "/submenuicons1/3.png",
-        href: "/sequential-lay-calculato",
+        // href: "/sequential-lay-calculato",
       },
       {
         id: 11,
         item1dsc: "EARLY Lay Calculator",
         item2desc: "Lock in a profit when the bookmarker pays  out early.",
         image: "/submenuicons1/4.png",
-        href: "/early-payout-calculator",
+        // href: "/early-payout-calculator",
       },
       {
         id: 12,
         item1dsc: "Dutching Calculaator",
         item2desc: "Simplifies the process of duthing selections.",
         image: "/submenuicons1/5.svg",
-        href: "/dutching-calculator",
+        // href: "/dutching-calculator",
       },
       {
         id: 13,
         item1dsc: "OddsMatcher",
         item2desc: "Find  the best odds  for your matched bets",
         image: "/submenuicons1/6.svg",
-        href: "/oddsmatcher",
+        // href: "/oddsmatcher",
       },
       {
         id: 14,
         item1dsc: "Odds Converter",
         item2desc: "Converter fractional,decimal and moneyline odds.",
         image: "/submenuicons1/7.svg",
-        href: "/odds-converter",
+        // href: "/odds-converter",
       },
       {
         id: 15,
@@ -254,7 +254,7 @@ export const dataMenu = [
         item2desc:
           "Qualify for 0% commission at  Smarkets,even if you're an existing customer.",
         image: "/submenuicons1/8.svg",
-        href: "/smarkets-0-commission-tool",
+        // href: "/smarkets-0-commission-tool",
       },
     ],
   },
@@ -524,5 +524,62 @@ export const dataEharIs = [
     id: 7,
     image1: "/whatis/6.svg",
     titleimg1: "6.Learn matched betting",
+  },
+];
+
+const matchedData = [
+  {
+    id: 1,
+  },
+];
+
+export const matched = [
+  {
+    id: 1,
+    title: "Matched Betting",
+    href: "/matched-betting-calculator",
+    image: "/submenuicons1/6.svg",
+  },
+  {
+    id: 2,
+    title: "Duching",
+    href: "/dutching-calculato",
+    image: "/submenuicons1/5.svg",
+  },
+  {
+    id: 3,
+    title: "Each Way",
+    href: "/each-way-calculator",
+    image: "/submenuicons1/12.svg",
+  },
+  {
+    id: 4,
+    title: "oddsMatcher",
+    href: "/oddsmatcher",
+    image: "/submenuicons1/6.svg",
+  },
+  {
+    id: 5,
+    title: "Sequential Lay",
+    href: "/sequential-lay-calculator",
+    image: "/submenuicons1/6.svg",
+  },
+  {
+    id: 7,
+    title: "Sequential Lay",
+    href: "/odds-converter",
+    image: "/submenuicons1/7.svg",
+  },
+  {
+    id: 8,
+    title: "Early Payout",
+    href: "/early-payout-calculator",
+    image: "/submenuicons1/7.svg",
+  },
+  {
+    id: 9,
+    title: "Smarkets 0% Commission Tool",
+    href: "/smarkets-0-commission-tool",
+    image: "/submenuicons1/7.svg",
   },
 ];
