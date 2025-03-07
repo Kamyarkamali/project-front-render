@@ -5,8 +5,6 @@ function Modal2({ item }) {
   const submenuKey = Object.keys(item).find((key) => key.startsWith("submenu"));
   const submenu = submenuKey ? item[submenuKey] : [];
 
-  console.log(submenu);
-
   return (
     <div className="grid grid-cols-2 items-center gap-5 mx-auto max-w-[1000px]">
       {submenu.map((item) => (

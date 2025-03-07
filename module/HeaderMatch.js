@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { matched } from "@/data/localData";
-import MainMatched from "@/templates/MainMatched";
+import MainMatched from "@/templates/MainMatched2";
 import Link from "next/link";
 
 function HeaderMatch() {
@@ -17,7 +17,7 @@ function HeaderMatch() {
             onClick={() => setSelectedMatch(item)}
           >
             <Link
-              href="#"
+              href={item.id.toString() ? item.id.toString() : "#"}
               className="flex items-center gap-3 bg-white p-2 rounded-lg w-[250px] shadow-sm hover:shadow-md duration-300 hover:scale-95"
             >
               <img className="w-[30px]" src={item.image} alt={item.title} />

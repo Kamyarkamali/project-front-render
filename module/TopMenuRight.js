@@ -70,6 +70,7 @@ function TopMenuRight({ item }) {
       )}
       {isHovered === item.id && (
         <div
+          onClick={() => setIsHovered(null)}
           onMouseEnter={handleMouseEnterModal}
           onMouseLeave={handleMouseLeaveModal}
           className={`bg-white ${

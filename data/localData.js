@@ -196,6 +196,7 @@ export const dataMenu = [
   {
     id: 5,
     title: "TOOLS",
+    hre: "/matched/1",
     submenu2: [
       {
         id: 8,
@@ -203,7 +204,7 @@ export const dataMenu = [
         item2desc:
           "Basic and  advanced modes including under/over and partial lays.",
         image: "/submenuicons1/1.png",
-        // href: "/matched-betting-calculator",
+        href: "/matched/1",
       },
       {
         id: 9,
@@ -211,42 +212,42 @@ export const dataMenu = [
         item2desc:
           "Simplifiels the process of each way arbing and extra place offers.",
         image: "/submenuicons1/2.png",
-        // href: "/each-way-calculator",
+        href: "/matched/1",
       },
       {
         id: 10,
         item1dsc: "Sequential Lay Calculator",
         item2desc: "Sequnetial lay betting for non-overlapping events.",
         image: "/submenuicons1/3.png",
-        // href: "/sequential-lay-calculato",
+        href: "/matched/1",
       },
       {
         id: 11,
         item1dsc: "EARLY Lay Calculator",
         item2desc: "Lock in a profit when the bookmarker pays  out early.",
         image: "/submenuicons1/4.png",
-        // href: "/early-payout-calculator",
+        href: "/matched/1",
       },
       {
         id: 12,
         item1dsc: "Dutching Calculaator",
         item2desc: "Simplifies the process of duthing selections.",
         image: "/submenuicons1/5.svg",
-        // href: "/dutching-calculator",
+        href: "/matched/1",
       },
       {
         id: 13,
         item1dsc: "OddsMatcher",
         item2desc: "Find  the best odds  for your matched bets",
         image: "/submenuicons1/6.svg",
-        // href: "/oddsmatcher",
+        href: "/matched/1",
       },
       {
         id: 14,
         item1dsc: "Odds Converter",
         item2desc: "Converter fractional,decimal and moneyline odds.",
         image: "/submenuicons1/7.svg",
-        // href: "/odds-converter",
+        href: "/matched/1",
       },
       {
         id: 15,
@@ -254,7 +255,7 @@ export const dataMenu = [
         item2desc:
           "Qualify for 0% commission at  Smarkets,even if you're an existing customer.",
         image: "/submenuicons1/8.svg",
-        // href: "/smarkets-0-commission-tool",
+        href: "/matched/1",
       },
     ],
   },
@@ -527,59 +528,234 @@ export const dataEharIs = [
   },
 ];
 
-const matchedData = [
-  {
-    id: 1,
-  },
-];
-
 export const matched = [
   {
     id: 1,
     title: "Matched Betting",
+    title2: "What is this calculator for?",
+    title3: "How to use this calculator",
+    title4: "Free bet",
+    title5: "Money back if bet loses",
+    title6: "Advanced settings",
+    // title6: "First Selection",
+    titletabale1: "Select bet type",
+    titletabale2: "Qualifying Bet -",
+    titletabale3: "Use when placing a bet to qualify for a free bet or bon",
+    titletabale4: "Free Bet -",
+    titletabale5: "Use when converting a free bet or bonus into cash",
+    titletabale6: "Back Bet (Bookie",
+    titletabale7: "Use when losing stakes are refunded",
+    titletabale8: "Back Bet (Bookie)",
+    titletabale9: "Lay Bet (Betting Exchange)",
+    titlescroll10: "Total profit: £ 0.00",
+    titlescroll11: "Lay Bet (Betting Exchange)",
+    type1: "text",
+    type2: "text",
+    type3: "text",
+    desc1:
+      "This calculator takes the manual work out of matched betting by calculating the stake you must place at the betting exchange (your lay stake) to get as close to breakeven as possible on your qualifying bets. It also maximises profit when placing your free bets. It also shows:",
+    desc2:
+      "The amount you need in your exchange account (liquidity) should your back bet win.",
+    desc3:
+      "The distribution of your money between your bookmaker and exchange accounts in the event of each outcome.",
+    desc4: "Your potential profit from a free bet at the current odds.",
+    desc5:
+      "How you can underlay or overlay – weighing your profit in favour of a",
+    desc62:
+      "This calculator is for making a profit from a range of offer types, the most common being ‘Bet X, Get Y’. I recommend working through my Matched Betting Guide so you can fully understand the matched betting process and its use.",
+    desc72:
+      "Depending on your stage when profiting from a bookmaker promotion, the calculator has a few different modes",
+    desc84:
+      "Use this mode when turning your free bet into a profit. It works for free bets and bonuses (A bonus is a free bet that needs to be ‘rolled over’ a set number of times before you can withdraw it. For example, a bonus with a three times rollover requirement means you must wager it three times before you are allowed to withdraw it as cash). For bonuses, you must bet until you either meet the rollover requirement or lose at the bookmaker and win at the exchange. My Bonus Rollover Guide gives full details. Again, input your stakes, odds and commission to get your lay stake.",
+    desc85:
+      "Some promotions will give you money back if your bet loses. E.g. ‘Bet £10 and get £5 back if your bet loses’. Select this mode to factor in the cashback amount from losing bets.",
+    desc86:
+      "Use part lays when you have already placed part of your lay bet at the exchange, but more is needed to give an equal profit on every outcome. This instance could arise if you made a mistake with your first lay bet. Enter the part lays you have already placed, and the calculator will give the lay stake required to equalise the profit on all outcomes.",
     href: "/matched-betting-calculator",
     image: "/submenuicons1/6.svg",
+    short:
+      "New to matched betting? Learn how to use this calculator to profit from bookmaker promotions in my complete matched betting guide.",
+    tabale1: true,
+    tabale2: true,
+    tabale3: true,
   },
   {
     id: 2,
     title: "Duching",
+    title2: "What is dutching?",
+    title3: "An alternative to laying",
+    title4: "Arbitrage dutching",
+    title5: "How to use this calculator",
+    titletabale1: "Select bet type",
+    titletabale2: "Qualifying Bet -",
+    titletabale3: "Use when placing a bet to qualify for a free bet or bon",
+    titletabale4: "Free Bet -",
+    titletabale5: "Use when converting a free bet or bonus into cash",
+    titletabale6: "Back Bet (Bookie",
+    titletabale7: "Use when losing stakes are refunded",
+    titletabale8: "Back Bet (Bookie)",
+    titletabale9: "Lay Bet (Betting Exchange)",
+    titlescroll10: "Total profit: £ 0.00",
+    titlescroll11: "Lay Bet (Betting Exchange)",
+    desc1:
+      "Dutching is very similar to regular matched betting. Instead of covering all outcomes with back and lay bets, you cover them with only back bets.",
+    desc2:
+      "Dutching is helpful when placing the corresponding lay bet at an exchange is not possible. For example, Smarkets have different tennis retirement rules to many bookmakers. In that instance, your back and lay bets are not exact matches, which means your money is at risk. It could also be that no lay market is available due to the exchange not covering the event, like some esports tournaments.",
+    desc3:
+      "The distribution of your money between your bookmaker and exchange accounts in the event of each outcome.",
+    desc4:
+      "There are also situations where you can use dutching to find an ‘arbing’ opportunity. These arise when bookmakers set their odds too high compared to other bookmakers. Due to the high odds, you can cover all outcomes and lock in a profit without needing a free bet or other promotion. These occurrences are rare and short-lived, as bookmakers will quickly adjust their odds to line up with everyone else, thus removing the opportunity.",
+    desc5:
+      "To use this calculator, enter the odds of the selections you’ve found. Once done, you’ve got several options for the calculator to work out your stakes by selecting one of the following in the ‘Target’ dropdown",
+    desc62:
+      "Use this option when you want the stake field to be the amount you stake on your first selection. The calculator works out all the other stakes based on this. ‘First Selection’ mode is useful when you must stake a certain amount on one of the selections, such as maxing out the amount you’re allowed to bet on that outcome or using a free bet of a specific value.",
+    desc72:
+      "Depending on your stage when profiting from a bookmaker promotion, the calculator has a few different modes",
+    desc84:
+      "In ‘First Selection’ mode, you can choose either ‘standard’ or ‘free’ bet types. Select ‘Free Bet’ if your first selection is a free bet where you do not get your stake returned with any winnings. The calculator will adjust your other stakes accordingly.",
+    desc85:
+      "Some promotions will give you money back if your bet loses. E.g. ‘Bet £10 and get £5 back if your bet loses’. Select this mode to factor in the cashback amount from losing bets.",
+    desc86:
+      "‘Total Stake’ mode will consider the amount you enter into the ‘stake’ field to be the total amount you want to stake across all outcomes. When you have to work within a limited bankroll, use this option.",
     href: "/dutching-calculato",
     image: "/submenuicons1/5.svg",
+    short:
+      "New to matched betting? Learn how to profit from bookmaker promotions in my complete matched betting guide.",
+    tabale1: true,
+    tabale2: true,
   },
   {
     id: 3,
     title: "Each Way",
+    title3: "How to use this calculator",
+    title4: "Extra place offers",
+    title5: "Each Way Arbing",
+    titletabale1: "Select bet type",
+    titletabale2: "Each Way -",
+    titletabale3: "Use when placing an each way arb.",
+    titletabale4: "Extra Place -",
+    titletabale5:
+      "Use when the bookmaker is paying more places than the exchange.",
+    titletabale6: "Back Bet (Bookie)",
+    titletabale7: "Use when losing stakes are refunded",
+    titletabale8: "Back Bet (Bookie)",
+    titletabale9: "Lay Bet (Betting Exchange)",
+    titlescroll10: "Total profit: £ 0.00",
+    titlescroll11: "Lay Bet (Betting Exchange)",
     href: "/each-way-calculator",
     image: "/submenuicons1/12.svg",
+    short:
+      "New to matched betting? Learn how to profit from bookmaker promotions in my complete matched betting guide.",
+    tabale1: true,
+    tabale2: true,
+    desc1:
+      "There are two main ways to use this calculator. They are profiting from ‘extra place’ offers and ‘each way arbing’, both excellent techniques for making money from your gubbed and restricted accounts.",
+    desc2:
+      "An each way bet contains two halves. One half is for the selection to ‘win’, and the other is for the selection to ‘place’, which means finishing in the top number of positions in an event. For example, a horse finishing in the top 3 in a race. If your selection places, that half of your each way bet is paid out at a fraction of the ‘win’ odds.",
+    desc3:
+      "The distribution of your money between your bookmaker and exchange accounts in the event of each outcome.",
+    desc4:
+      "An opportunity to profit arises when a bookmaker pays out an ‘extra’ place on an event. Horse races and some golf tournaments are where this offer most commonly appears. For example, a horse finishing in the top 4 positions rather than the usual 3.",
+    desc5:
+      "Most bets will incur a small loss, but you’ll make a big profit if your selection finishes in the ‘extra place’.",
+    desc62:
+      "My full Extra Place Offers Guide gives complete guidance on how to find these offers, pick suitable selections, and place the required bets.",
+    desc72:
+      "Extra place offers are available to all customers, even gubbed and restricted ones, so it’s a great way of boosting your daily profits",
+    desc84:
+      "An ‘arb’ is a bet where the back odds are greater than the lay odds to the extent that it guarantees a profit. ‘Arbing’ is the process of placing such bets.",
+    desc85:
+      "Placing bets where the back odds are higher than they should be is called ‘taking value’. Take value consistently, and it can arouse suspicion and lead to account restrictions. Therefore, I only recommend arbing on gubbed or restricted accounts",
+    desc86:
+      "This calculator assists with a very particular kind of arb – one that features an each way bet. See my complete Each Way Arbing Guide to learn how to find arbing opportunities and how to profit from them.",
   },
   {
     id: 4,
-    title: "oddsMatcher",
+    title: "OddsMatcher",
+    title2: "How it works",
+    desc1:
+      "The OddsMatcher is here to help you complete the Coral and Ladbrokes sign up offers by scanning the latest odds and highlighting the best options for placing your bets.",
+    desc2:
+      "Once you’ve completed those two offers, you can either search for odds manually, which soon becomes second nature, or you can register with OddsMonkey for access to their full OddsMatcher, featuring over 90 bookmakers.",
+    desc3:
+      "OddsMonkey have requested that I keep the OddsMatcher above behind a login. Therefore, if you want to use it, you’ll need to register with my blog. My blog is completely free to use, and registering will also enable you to post on the forum.",
+    desc3:
+      "OddsMonkey have requested that I keep the OddsMatcher above behind a login. Therefore, if you want to use it, you’ll need to register with my blog. My blog is completely free to use, and registering will also enable you to post on the forum.",
     href: "/oddsmatcher",
     image: "/submenuicons1/6.svg",
+    short: "",
   },
   {
     id: 5,
     title: "Sequential Lay",
+    titletabale1: "Select bet type",
+    titletabale2: "Standard-",
+    titletabale3: "Let it run for maximum profit/loss if all legs win.",
+    titletabale4: "Free Bet -",
+    titletabale5: "Lock In -",
+    titletabale6:
+      " Split profit/loss on final leg if all previous legs have won.",
+
+    titletabale7: "Use when losing stakes are refunded",
+    titletabale8: "Back Bet (Bookie)",
+    titletabale9: "Lay Bet (Betting Exchange)",
+    titlescroll10: "Total profit: £ 0.00",
+    titlescroll11: "Leg 1 Lay Bet (Exchange)",
     href: "/sequential-lay-calculator",
-    image: "/submenuicons1/6.svg",
+    image: "/submenuicons1/d.png",
+    short:
+      "New to matched betting? Learn how to profit from bookmaker promotions in my complete matched betting guide.",
+    tabale1: true,
+    tabale2: true,
+    tabale3: true,
   },
   {
     id: 7,
-    title: "Sequential Lay",
+    title: "Odds Converter",
     href: "/odds-converter",
     image: "/submenuicons1/7.svg",
+    short: "",
+    tabale1: true,
+    tabale2: true,
   },
   {
     id: 8,
     title: "Early Payout",
+    title2: "How it works",
     href: "/early-payout-calculator",
-    image: "/submenuicons1/7.svg",
+    image: "/submenuicons1/dd.png",
+    tabale1: true,
+    tabale2: true,
+
+    desc1:
+      "The OddsMatcher is here to help you complete the Coral and Ladbrokes sign up offers by scanning the latest odds and highlighting the best options for placing your bets.",
+    desc2:
+      "Once you’ve completed those two offers, you can either search for odds manually, which soon becomes second nature, or you can register with OddsMonkey for access to their full OddsMatcher, featuring over 90 bookmakers.",
+    desc3:
+      "OddsMonkey have requested that I keep the OddsMatcher above behind a login. Therefore, if you want to use it, you’ll need to register with my blog. My blog is completely free to use, and registering will also enable you to post on the forum.",
+    short:
+      "New to matched betting? Learn how to profit from bookmaker promotions in my complete matched betting guide.",
+    tabale1: false,
+    tabale2: false,
   },
   {
     id: 9,
     title: "Smarkets 0% Commission Tool",
+    titletabale1: "Select bet type",
+    titletabale2: "Each Way -",
+    titletabale3: "Use when placing an each way arb.",
+    titletabale4: "Extra Place -",
+    titletabale5:
+      "Use when the bookmaker is paying more places than the exchange.",
+    titletabale6: "Back Bet (Bookie)",
+    titletabale7: "Use when losing stakes are refunded",
+    titletabale8: "Back Bet (Bookie)",
+    titletabale9: "Lay Bet (Betting Exchange)",
+    titlescroll10: "Total profit: £ 0.00",
+    titlescroll11: "Lay Bet (Betting Exchange)",
     href: "/smarkets-0-commission-tool",
-    image: "/submenuicons1/7.svg",
+    image: "/submenuicons1/8.svg",
+    tabale1: true,
+    short: "",
   },
 ];
