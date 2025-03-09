@@ -759,3 +759,83 @@ export const matched = [
     short: "",
   },
 ];
+
+export const dataOffers = [
+  {
+    id: 1,
+    title: "Guaranteed",
+    price: "£5.31",
+    desc1: "LiveScore Bet – Nottingham Forest v Man City Offer",
+    desc2:
+      "Place a bet on Nottingham Forest v Man City and get your stake back as a free bet if it loses.",
+    date: "Sat, 08 Mar 12:30",
+    category: "Football",
+    comments: "0",
+  },
+  {
+    id: 2,
+    title: "Guaranteed",
+    price: "£3.00",
+    desc1: "William Hill – Scotland v Wales (In-Shop) Offer",
+    desc2:
+      "Place a £10+ in-shop bet on Scotland v Wales and get a £5 free bet to use on any sport.",
+    date: "Sat, 08 Mar 16:45",
+    category: "Rugby",
+    comments: "0",
+  },
+  {
+    id: 3,
+    title: "Guaranteed",
+    price: "£3.25",
+    desc1: "Betfred – Football Bet & Get Offer",
+    desc2:
+      "Place a £10+ in-play single bet on any Friday or Saturday Premier League or Championship match and get £5 in free bets to use in-play on Sunday's matches",
+    date: "Sat, 08 Mar 23:59",
+    category: "Fooball",
+    comments: "0",
+  },
+  {
+    id: 4,
+    title: "Guaranteed",
+    price: "£6.00",
+    desc1: "bet365 – Brentford v Aston Villa Offer",
+    desc2:
+      "Stake a total of £10+ on Brentford v Aston Villa 'Bet Builders' and get a £10 free bet.",
+    date: "Sat, 08 Mar 23:59",
+    category: "Fooball",
+    comments: "0",
+  },
+  {
+    id: 5,
+    title: "Guaranteed",
+    price: "£3.51",
+    desc1: "Sky Bet – Nottingham Forest v Man City Boost",
+    desc2:
+      "Enhanced odds of evens (was 1/7) on Erling Haaland to have 1+ shots on target for Man City against Nottingham Forest.",
+    date: "Sat, 08 Mar 23:59",
+    category: "Fooball",
+    comments: "0",
+  },
+  {
+    id: 6,
+    title: "Guaranteed",
+    price: "£3.51",
+    desc1: "Betfair – Greyhounds Bet & Get Offer",
+    desc2:
+      "Place a £5+ multiple bet on Saturday's greyhounds and get a £5 free bet to use on another greyhounds multiple bet.",
+    date: "Sat, 08 Mar 23:59",
+    category: "Fooball",
+    comments: "0",
+  },
+  {
+    id: 7,
+    title: "Guaranteed",
+    price: "£3.50",
+    desc1: "William Hill – Sandown Bet & Get (In-Shop) Offer",
+    desc2:
+      "Stake £10+ in-shop on Saturday's racing at Sandown and get a £5 free bet.",
+    date: "Sat, 08 Mar 23:59",
+    category: "Fooball",
+    comments: "0",
+  },
+];
