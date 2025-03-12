@@ -263,6 +263,7 @@ export const dataMenu = [
     id: 6,
     title: "OFFERS",
     descshortex2: "SINGUP AND RELOAD OFFERS",
+    href: "/reload-offers",
     submenu3: [
       {
         id: 16,
@@ -270,28 +271,28 @@ export const dataMenu = [
         item2desc:
           "Over &#8364 1,500 in free bets and bonuses available to new customers.",
         image: "/submenuicons1/9.svg",
-        href: "/new-customer-offers",
+        href: "/reload-offers",
       },
       {
         id: 17,
         item1dsc: "Extra Place Offers",
         item2desc: "A list of available extra offers,updated daily!",
         image: "/submenuicons1/10.svg",
-        href: "/early-payout-2up-offers",
+        href: "/reload-offers",
       },
       {
         id: 18,
         item1dsc: "Early Payout(2UP) Offers",
         item2desc: "All early payout 2UP,updated daily!",
         image: "/submenuicons1/11.svg",
-        href: "/early-payout-2up-offers",
+        href: "/reload-offers",
       },
       {
         id: 19,
         item1dsc: "Greyhound Offers",
         item2desc: "All greyhound offers for the day.Never miss a bet !",
         image: "/submenuicons1/12.svg",
-        href: "/greyhound-offers",
+        href: "/reload-offers",
       },
       {
         id: 20,
